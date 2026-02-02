@@ -1,0 +1,21 @@
+a = 1
+if a > 0:
+    a = 2
+    b = 3
+else:
+    a = 1
+    b = 3
+
+print(f"a: {a}, b: {b}")
+
+"""
+파이썬은 {} 기호가 없어서 함수, class 빼고는 scope 가 없어요
+if문 안에 변수 선언해도 바깥쪽에서 실컷 참조할 수 있어요
+"""
+
+for i in range(3):
+    print(i, end = ", ")
+    # 개행 안 하고 , 넣겠다
+
+print("apple", "banana", "orange", sep = " & ")
+print("--")
