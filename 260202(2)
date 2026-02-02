@@ -1,0 +1,17 @@
+""" list comprehensive 연습문제 """
+a = [1, 2, 3, 4, 5]
+b = [x * 2 for x in a if x % 2 == 0]
+print(b)
+
+word = "Python"
+result = [char.upper() for char in word if char not in 'aeiou']
+# char.upper() -> 선택된 문자를 대문자로 변환
+print("".join(result))
+# "".join(result) -> 리스트 요소 사이에 아무 문자도 넣지 않고 이어붙임
+
+print("a".join("ab"))
+
+a = [1, 2, 3]
+b = [10, 20]
+result = [x + y for x in a for y in b]
+print(result)
