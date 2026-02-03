@@ -1,0 +1,22 @@
+""" set 연습문제 """
+data1 = [1, 2, 3, 4, 5, 5]
+data2 = [4, 5, 6, 7, 8]
+
+# 1. 중복 제거 및 집합 변환
+set1 = set(data1) # {1, 2, 3, 4, 5}
+set2 = set(data2) #{4, 5, 6, 7, 8}
+
+# 2. 집합 연산
+intersect = set1 & set2 # {4, 5}
+union = set1 | set2 # {1, 2, 3, 4, 5, 6, 7, 8}
+
+# 3. 데이터 추가 및 수정
+union.add(10) # {1, 2, 3, 4, 5, 6, 7, 8, 10}
+if 5 in intersect:
+    union.discard(5) # {1, 2, 3, 4, 6, 7, 8, 10}
+
+# 4. 결과 연산 및 출력
+result = sorted(list(union - intersect)) # List({1, 2, 3, 6, 7, 8, 10}) -> 정렬 (sorted뜻 : 정렬)
+print(result)
+
+""" set 연습문제 END """
